@@ -1,0 +1,2 @@
+Handling of missing values: KNN Imputer
+Preprocessing of data: Data is preprocessed through standard scaler if numerical and ordinal encoder if categorical

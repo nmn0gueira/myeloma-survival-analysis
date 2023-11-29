@@ -1,4 +1,4 @@
-andling of missing values: Using statsmodels PCA
+Handling of missing values: Using statsmodels PCA
 Preprocessing of data: Data is preprocessed through statsmodels PCA
 
 Fit without mid way cross validation, not acceptable

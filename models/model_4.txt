@@ -1,4 +1,4 @@
-andling of missing values: Using statsmodels PCA
+Handling of missing values: Using statsmodels PCA
 Preprocessing of data: Data is preprocessed through statsmodels PCA
 
 Model 3 but fit with the appropriate training data
