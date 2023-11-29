@@ -1,0 +1,2 @@
+Handling of missing values: Using statsmodels PCA
+Preprocessing of data: Data is preprocessed through statsmodels PCA
