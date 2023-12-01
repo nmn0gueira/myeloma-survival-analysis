@@ -1,0 +1,1 @@
+Same as model 2 but ridge regression

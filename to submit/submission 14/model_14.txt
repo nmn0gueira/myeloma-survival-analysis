@@ -1,0 +1,4 @@
+Ridge Regression
+Handling of missing values: Using statsmodels PCA
+Preprocessing of data: Data is preprocessed through statsmodels PCA withou reducing dimesionality
+Hypertuned parameters to alpha = 50.0 and solver = 'lsqr'

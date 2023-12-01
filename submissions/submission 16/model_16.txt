@@ -1,0 +1,5 @@
+Ridge Regression
+Handling of missing values: Simple Imputer
+Preprocessing of data: Data is preprocessed through StandardScaler and Ordinal Encoder for numerical data and categorical data, respectively. After that dimesionality of the data is reduced to 2 using PCA fitted on labeled and unlabeled data
+
+Hyper parameter tuning for alpha = 50.0 and solver = 'lsqr'
