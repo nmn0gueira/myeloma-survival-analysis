@@ -1,2 +1,3 @@
+RandomForestRegressor
 Handling of missing values: Removing rows with them
 Preprocessing of data: As described in the pipeline steps
