@@ -300,7 +300,6 @@ def calc_fold(pipeline, X, y, train_ix, test_ix, error_func):
     """return regression error for train and test"""
     censored = X['Censored']
     X = X.drop(columns=['Censored'])
-    print(X.shape)
     
     pipeline.fit(X.iloc[train_ix, :], y.iloc[train_ix])
 
@@ -316,8 +315,6 @@ def calc_test_error(pipeline, X_train, y_train, X_test, y_test, error_func):
 
     X_train = X_train.drop(columns=['Censored'])
     X_test = X_test.drop(columns=['Censored'])
-
-    print(X_train.shape)
 
     pipeline.fit(X_train, y_train)
 
@@ -452,7 +449,7 @@ print(f"Best parameters: {best_params}")
 print(f"Best score: {best_score}")
 print(f"Best estimator: {best_estimator}")
 """
-
+"""
 # # Feature analysis
 # Make a coefficient table for purely supervised models (linear and ridge regression)
 coefficients = [supervised_pipelines['LinearRegression'][9]['model'].coef_, supervised_pipelines['Ridge'][9]['model'].coef_]
@@ -461,7 +458,7 @@ columns = df.columns.drop(['SurvivalTime', 'Censored'])
 # Index is the model name
 index = [supervised_pipelines['LinearRegression'][9]['model'].__str__(), supervised_pipelines['Ridge'][9]['model'].__str__()]
 coefficients = pd.DataFrame(coefficients, columns=columns, index=index)
-
+"""
 # # Save Model
 #with open('model.pkl', 'wb') as file:
 #    pickle.dump(best_model, file)
