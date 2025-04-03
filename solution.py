@@ -412,10 +412,11 @@ def plot_errors(errs):
 #plot_errors(semi_supervised_errors)
 
 
-# # Hyper Parameter Tuning
-best_model = supervised_best_model
-best_model = semi_supervised_best_model
 
+best_model = supervised_best_model # The supervised model turned out better
+#best_model = semi_supervised_best_model
+
+# # Hyper Parameter Tuning
 """
 from sklearn.metrics import make_scorer
 # Define hyperparameters grid to search through (best model is Ridge)
@@ -465,10 +466,10 @@ coefficients = pd.DataFrame(coefficients, columns=columns, index=index)
 
 
 # # Load Model
-#best_model = pickle.load(open('models/model_2.pkl', 'rb'))
+#best_model = pickle.load(open('models/model_12.pkl', 'rb'))
 
 
-# # Submission Prediction
+# # Submission Prediction 
 # Train submission model on the whole dataset
 X = df_labeled.drop(columns=['SurvivalTime', 'Censored'])
 y = df_labeled['SurvivalTime']
